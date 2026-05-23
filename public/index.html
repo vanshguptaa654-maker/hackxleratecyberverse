@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SENTINEL AI // Cyber Intelligence Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-slate-300 min-h-screen flex flex-col selection:bg-cyan-500 selection:text-slate-900 overflow-x-hidden">
+
+    <div class="alert-marquee-container">
+        <div class="marquee-track">
+            <div class="marquee-group">
+                <span class="status-badge">CRITICAL INCIDENT ALERT</span>
+                <span class="alert-text">RECURSIVE CREDENTIAL LURES DETECTED</span>
+                <span class="divider">//</span>
+                <span class="actor-label">THREAT ACTOR:</span>
+                <span class="actor-name">'CRIMSONOTTER'</span>
+                <span class="pulse-indicator"></span>
+                <span class="live-status">LIVE ACTIVE HARVEST</span>
+                <span class="divider">///</span>
+            </div>
+            <div class="marquee-group" aria-hidden="true">
+                <span class="status-badge">CRITICAL INCIDENT ALERT</span>
+                <span class="alert-text">RECURSIVE CREDENTIAL LURES DETECTED</span>
+                <span class="divider">//</span>
+                <span class="actor-label">THREAT ACTOR:</span>
+                <span class="actor-name">'CRIMSONOTTER'</span>
+                <span class="pulse-indicator"></span>
+                <span class="live-status">LIVE ACTIVE HARVEST</span>
+                <span class="divider">///</span>
+            </div>
+        </div>
+    </div>
+
+    <header class="border-b border-slate-900 bg-slate-950/60 backdrop-blur-md sticky top-0 z-50 px-4 sm:px-6 py-4 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+        <div class="flex items-center space-x-3.5 w-full md:w-auto">
+            <div class="p-2.5 bg-cyan-500/10 text-cyan-400 rounded-xl border border-cyan-500/20 shadow-[0_0_15px_rgba(6,182,212,0.1)] shrink-0">
+                <i data-lucide="shield-alert" class="w-5 h-5 sm:w-6 h-6 animate-pulse"></i>
+            </div>
+            <div class="min-w-0">
+                <div class="flex flex-wrap items-center gap-2">
+                    <h1 class="heading-font text-base sm:text-lg font-black tracking-widest text-white truncate">SENTINEL AI</h1>
+                    <span class="text-[8px] sm:text-[9px] heading-font font-bold bg-cyan-500/20 text-cyan-400 px-1.5 py-0.5 rounded border border-cyan-500/30 whitespace-nowrap">INTELLIGENCE MATRIX</span>
+                </div>
+                <p class="text-[9px] sm:text-[10px] uppercase text-slate-500 font-medium tracking-wider truncate">BEHAVIORAL HYBRID DEEP ENGINE FORENSICS LAYER</p>
+            </div>
+        </div>
+
+        <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto text-[11px]">
+            <div class="flex items-center gap-2">
+                <button class="px-3 py-1.5 bg-slate-900 border border-cyan-500/30 text-cyan-400 font-bold uppercase rounded-lg heading-font tracking-wider whitespace-nowrap">Scanner</button>
+                <button onclick="pullHistoricalTelemetryStream()" class="px-3 py-1.5 text-slate-500 hover:text-cyan-400 font-bold uppercase tracking-wider heading-font transition-colors cursor-pointer whitespace-nowrap">
+                    Intel Feed
+                </button>
+            </div>            
+            <div class="flex items-center gap-2 bg-slate-950 px-3 py-1.5 rounded-lg border border-slate-900 font-mono text-[10px] sm:text-[11px]">
+                <span class="w-2 h-2 rounded-full bg-cyan-500 animate-pulse"></span>
+                <span class="text-cyan-400 font-bold whitespace-nowrap">NODE: ONLINE</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="text-center py-6 sm:py-8 px-4 max-w-4xl mx-auto space-y-2">
+        <h2 class="heading-font text-xl sm:text-2xl md:text-4xl font-black tracking-[0.15em] sm:tracking-[0.2em] text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-300 to-slate-600 uppercase leading-tight">
+            DETECT THE UNDETECTABLE
+        </h2>
+        <p class="text-[11px] sm:text-xs text-slate-400 max-w-2xl mx-auto leading-relaxed">
+            Sentinel AI processes suspicious communication artifacts across 4 separate security vector pipelines, generating real-time algorithmic explanations and risk scoring indicators.
+        </p>
+    </div>
+
+    <section class="max-w-7xl w-full mx-auto px-4 sm:px-6 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 mb-6 text-center md:text-left">
+        <div class="bg-slate-950/40 border border-slate-900 rounded-xl sm:rounded-2xl p-3 sm:p-4 min-w-0">
+            <span class="text-[9px] sm:text-[10px] uppercase font-bold text-slate-500 tracking-wider block truncate">Signatures Indexed</span>
+            <span class="heading-font text-base sm:text-lg font-bold text-white block mt-0.5">2.4M</span>
+        </div>
+        <div class="bg-slate-950/40 border border-slate-900 rounded-xl sm:rounded-2xl p-3 sm:p-4 min-w-0">
+            <span class="text-[9px] sm:text-[10px] uppercase font-bold text-slate-500 tracking-wider block truncate">Intel Core Feeds</span>
+            <span class="heading-font text-base sm:text-lg font-bold text-cyan-400 block mt-0.5">14 Active</span>
+        </div>
+        <div class="bg-slate-950/40 border border-slate-900 rounded-xl sm:rounded-2xl p-3 sm:p-4 min-w-0">
+            <span class="text-[9px] sm:text-[10px] uppercase font-bold text-slate-500 tracking-wider block truncate">Core Accuracy Metric</span>
+            <span class="heading-font text-base sm:text-lg font-bold text-white block mt-0.5">98.7%</span>
+        </div>
+        <div class="bg-slate-950/40 border border-slate-900 rounded-xl sm:rounded-2xl p-3 sm:p-4 min-w-0">
+            <span class="text-[9px] sm:text-[10px] uppercase font-bold text-slate-500 tracking-wider block truncate">Scan Runtime Window</span>
+            <span class="heading-font text-base sm:text-lg font-bold text-emerald-400 block mt-0.5">&lt; 2.0s</span>
+        </div>
+    </section>
+
+    <main class="flex-1 max-w-7xl w-full mx-auto p-4 sm:px-6 sm:pb-6 grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+        
+        <section class="lg:col-span-7 space-y-6 w-full min-w-0">
+            
+            <div class="bg-slate-950/50 border border-slate-900 rounded-2xl p-4 sm:p-6 glow-cyan relative space-y-5 sm:space-y-6 overflow-hidden">
+                <div class="absolute top-1.3 left-4 sm:left-6 -translate-y-1/2 bg-[#050811] border border-slate-900 rounded-md px-2.5 py-0.5 text-[9px] sm:text-[10px] font-bold tracking-widest text-cyan-400 uppercase z-30">
+                    
+                  
+                  Threat Vector Input Console
+                </div>
+
+                <div class="flex items-center justify-between gap-4 border-b border-slate-900 pb-4 relative z-20">
+                    <div class="space-y-1 min-w-0">
+                        <h3 class="heading-font text-xs font-bold text-white uppercase tracking-wider">Select Vector Pipeline</h3>
+                        <p class="text-[11px] text-slate-500 leading-tight">Isolate malicious content, hidden structures, or suspicious redirect protocols.</p>
+                    </div>
+                    <div class="radar-container shrink-0 relative w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-cyan-500/20 bg-cyan-950/10 flex items-center justify-center overflow-hidden">
+                        <svg class="w-full h-full" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="44" fill="none" stroke="#06b6d4" stroke-width="1" stroke-opacity="0.15" />
+                            <circle cx="50" cy="50" r="28" fill="none" stroke="#06b6d4" stroke-width="1" stroke-opacity="0.1" />
+                            <circle cx="50" cy="50" r="14" fill="none" stroke="#06b6d4" stroke-width="1" stroke-opacity="0.08" />
+                            <g class="radar-sweeper-pivot">
+                                <polygon points="50,50 50,2 95,20" fill="url(#radarSweepGradient)" opacity="0.45" />
+                                <line x1="50" y1="50" x2="50" y2="2" stroke="#06b6d4" stroke-width="1.5" stroke-linecap="round" filter="drop-shadow(0 0 4px #06b6d4)" />
+                            </g>
+                            <circle cx="50" cy="50" r="2" fill="#06b6d4" />
+                            <defs>
+                                <linearGradient id="radarSweepGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#06b6d4" stop-opacity="1" />
+                                    <stop offset="60%" stop-color="#06b6d4" stop-opacity="0.1" />
+                                    <stop offset="100%" stop-color="#06b6d4" stop-opacity="0" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-4 gap-1 bg-slate-900/40 p-1 rounded-xl border border-slate-900 relative z-20">
+                    <button onclick="switchPipelineTab('url')" id="pipeline-tab-url" class="py-2 sm:py-2.5 text-[9px] sm:text-xs font-bold rounded-lg transition-all text-cyan-400 bg-slate-950 border border-cyan-500/20 shadow-[0_0_10px_rgba(6,182,212,0.1)] truncate">
+                        URL
+                    </button>
+                    <button onclick="switchPipelineTab('sms')" id="pipeline-tab-sms" class="py-2 sm:py-2.5 text-[9px] sm:text-xs font-bold rounded-lg transition-all text-slate-500 hover:text-slate-300 truncate">
+                        SMS
+                    </button>
+                    <button onclick="switchPipelineTab('email')" id="pipeline-tab-email" class="py-2 sm:py-2.5 text-[9px] sm:text-xs font-bold rounded-lg transition-all text-slate-500 hover:text-slate-300 truncate">
+                        EMAIL
+                    </button>
+                    <button onclick="switchPipelineTab('qr')" id="pipeline-tab-qr" class="py-2 sm:py-2.5 text-[9px] sm:text-xs font-bold rounded-lg transition-all text-slate-500 hover:text-slate-300 truncate">
+                        QR DECODER
+                    </button>
+                </div>
+
+                <div class="min-h-[160px] flex flex-col justify-center relative z-20 w-full">
+                    
+                    <form id="pipeline-form-url" class="pipeline-form space-y-4 w-full">
+                        <div class="space-y-1.5">
+                            <label class="text-[9px] sm:text-[10px] text-slate-500 font-bold uppercase tracking-widest block">Target Payload Domain / Hyperlink Input</label>
+                            <input type="text" id="payload-input-url" required placeholder="https://secure-bank-verify.xyz/login?u=session_auth_token" 
+                                   class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 sm:px-4 py-3 text-xs sm:text-sm font-medium focus:outline-none focus:border-cyan-500/50 focus:ring-1 focus:ring-cyan-500/50 transition placeholder:text-slate-700 text-slate-200 font-mono">
+                        </div>
+                        <button type="submit" class="w-full bg-gradient-to-r from-cyan-600 to-cyan-700 hover:from-cyan-500 hover:to-cyan-600 text-slate-950 font-bold py-3 sm:py-3.5 px-4 rounded-xl text-[10px] sm:text-xs tracking-widest heading-font transition-all uppercase shadow-[0_0_20px_rgba(6,182,212,0.1)]">
+                            Analyze URL Threat Structure
+                        </button>
+                    </form>
+
+                    <form id="pipeline-form-sms" class="pipeline-form space-y-4 hidden w-full">
+                        <div class="space-y-1.5">
+                            <label class="text-[9px] sm:text-[10px] text-slate-500 font-bold uppercase tracking-widest block">Raw Smishing Message String / Lure Body</label>
+                            <textarea id="payload-input-sms" required rows="3" placeholder="URGENT: Your account access expires in 24 hours. Click here to confirm identity:..." 
+                                      class="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 sm:p-4 text-xs sm:text-sm font-medium focus:outline-none focus:border-cyan-500/50 focus:ring-1 focus:ring-cyan-500/50 transition placeholder:text-slate-700 text-slate-200 resize-none font-mono"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-gradient-to-r from-cyan-600 to-cyan-700 hover:from-cyan-500 hover:to-cyan-600 text-slate-950 font-bold py-3 sm:py-3.5 px-4 rounded-xl text-[10px] sm:text-xs tracking-widest heading-font transition-all uppercase shadow-[0_0_20px_rgba(6,182,212,0.1)]">
+                            Deconstruct SMS Signatures
+                        </button>
+                    </form>
+
+                    <form id="pipeline-form-email" class="pipeline-form space-y-4 hidden w-full">
+                        <div class="space-y-1.5">
+                            <label class="text-[9px] sm:text-[10px] text-slate-500 font-bold uppercase tracking-widest block">Full Email Body Content / Social Engineering Text</label>
+                            <textarea id="payload-input-email" required rows="3" placeholder="Dear Customer, Suspicious login attempts were flagged on your card block. Please follow the instructions attached to secure funds..." 
+                                      class="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 sm:p-4 text-xs sm:text-sm font-medium focus:outline-none focus:border-cyan-500/50 focus:ring-1 focus:ring-cyan-500/50 transition placeholder:text-slate-700 text-slate-200 resize-none font-mono"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-gradient-to-r from-cyan-600 to-cyan-700 hover:from-cyan-500 hover:to-cyan-600 text-slate-950 font-bold py-3 sm:py-3.5 px-4 rounded-xl text-[10px] sm:text-xs tracking-widest heading-font transition-all uppercase shadow-[0_0_20px_rgba(6,182,212,0.1)]">
+                            Parse Email Phishing DNA
+                        </button>
+                    </form>
+
+                    <form id="pipeline-form-qr" class="pipeline-form space-y-4 hidden w-full">
+                        <div class="space-y-1.5">
+                            <label class="text-[9px] sm:text-[10px] text-slate-500 font-bold uppercase tracking-widest block">Graphical QR Matrix Pattern Frame</label>
+                            <div class="border border-dashed border-slate-800 hover:border-cyan-500/30 bg-slate-950/50 transition rounded-xl p-4 sm:p-6 flex flex-col items-center justify-center text-center cursor-pointer" onclick="document.getElementById('file-input-qr').click()">
+                                <input type="file" id="file-input-qr" required accept="image/*" class="hidden" onchange="handleQRFileLabelBinding(this)">
+                                <div id="file-icon-box" class="p-2.5 bg-slate-900 rounded-xl border border-slate-800 text-slate-500 mb-2">
+                                    <i data-lucide="qr-code" class="w-5 h-5"></i>
+                                </div>
+                                <p class="text-xs text-slate-400 font-medium break-all px-2" id="file-label-text">Select / Drop Image Vector Matrix</p>
+                            </div>
+                        </div>
+                        <button type="submit" class="w-full bg-gradient-to-r from-cyan-600 to-cyan-700 hover:from-cyan-500 hover:to-cyan-600 text-slate-950 font-bold py-3 sm:py-3.5 px-4 rounded-xl text-[10px] sm:text-xs tracking-widest heading-font transition-all uppercase shadow-[0_0_20px_rgba(6,182,212,0.1)]">
+                            Decode Visual Matrix Data
+                        </button>
+                    </form>
+
+                </div>
+
+                <div class="border-t border-slate-900 pt-4 grid grid-cols-3 sm:grid-cols-6 gap-1.5 text-[8px] sm:text-[9px] font-bold tracking-wider sm:tracking-widest text-center uppercase heading-font text-slate-500 relative z-20">
+                    <div class="bg-slate-900/30 border border-slate-900/60 py-1.5 rounded-md text-cyan-500/70 truncate">PHISHING</div>
+                    <div class="bg-slate-900/30 border border-slate-900/60 py-1.5 rounded-md truncate">SMISHING</div>
+                    <div class="bg-slate-900/30 border border-slate-900/60 py-1.5 rounded-md truncate">CRED THEFT</div>
+                    <div class="bg-slate-900/30 border border-slate-900/60 py-1.5 rounded-md truncate">MALWARE</div>
+                    <div class="bg-slate-900/30 border border-slate-900/60 py-1.5 rounded-md truncate">IMPERSONATION</div>
+                    <div class="bg-slate-900/30 border border-slate-900/60 py-1.5 rounded-md truncate">FRAUD</div>
+                </div>
+            </div>
+
+            <div id="telemetry-output-container" class="hidden space-y-6 w-full">
+                
+                <div id="banner-verdict-wrapper" class="border p-4 sm:p-6 rounded-2xl grid grid-cols-1 md:grid-cols-12 gap-6 items-center shadow-2xl relative overflow-hidden w-full">
+                    
+                    <div class="md:col-span-5 lg:col-span-4 flex flex-col items-center justify-center text-center border-b md:border-b-0 md:border-r border-slate-900/60 pb-6 md:pb-0 md:pr-4">
+                        <div class="relative w-32 h-32 sm:w-36 sm:h-36 flex items-center justify-center mb-3">
+                            <svg class="w-full h-full transform -rotate-90" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="40" stroke="rgba(15, 23, 42, 0.8)" stroke-width="8" fill="transparent" />
+                                <circle id="donut-metric-circle" cx="50" cy="50" r="40" stroke="currentColor" stroke-width="8" fill="transparent" 
+                                        stroke-dasharray="251.2" stroke-dashoffset="251.2" stroke-linecap="round" class="transition-all duration-1000 ease-out" />
+                            </svg>
+                            <div class="absolute inset-0 flex flex-col items-center justify-center">
+                                <span class="text-[8px] font-black tracking-widest text-slate-500 uppercase">RISK INDEX</span>
+                                <div id="txt-threat-score" class="heading-font text-3xl sm:text-4xl font-black tracking-tighter text-white">0%</div>
+                                <span id="badge-threat-verdict" class="text-[7px] font-black heading-font tracking-widest px-1.5 py-0.5 rounded border uppercase mt-0.5">SAFE</span>
+                            </div>
+                        </div>
+                        
+                        <div id="txt-vector-classification" class="text-[9px] font-black tracking-widest heading-font bg-slate-950 px-2.5 py-1 rounded-md border border-slate-900 w-full max-w-[200px] truncate">
+                            VECTOR: CLEAR
+                        </div>
+                    </div>
+
+                    <div class="md:col-span-7 lg:col-span-8 space-y-2.5 min-w-0 w-full">
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-slate-500 block">Forensic Investigation Summary</span>
+                        <h3 id="txt-threat-title" class="heading-font text-base sm:text-lg font-extrabold tracking-wide text-white uppercase truncate"></h3>
+                        <p id="txt-threat-explanation" class="text-xs text-slate-400 leading-relaxed bg-slate-950/40 p-3 sm:p-4 border border-slate-900 rounded-xl break-words"></p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+                    <div class="bg-slate-950/40 border border-slate-900 rounded-2xl p-4 sm:p-5 space-y-3 min-w-0 w-full">
+                        <h4 class="text-xs font-bold uppercase text-slate-400 tracking-wider flex items-center gap-2">
+                            <i data-lucide="activity" class="w-4 h-4 text-cyan-400 shrink-0"></i> Triggered Security Flags
+                        </h4>
+                        <ul id="list-threat-indicators" class="text-[11px] space-y-2 text-slate-400 max-h-[180px] overflow-y-auto pr-1"></ul>
+                    </div>
+                    <div class="bg-slate-950/40 border border-slate-900 rounded-2xl p-4 sm:p-5 space-y-3 min-w-0 w-full">
+                        <h4 class="text-xs font-bold uppercase text-slate-400 tracking-wider flex items-center gap-2">
+                            <i data-lucide="shield-check" class="w-4 h-4 text-emerald-400 shrink-0"></i> Mitigation Playbooks
+                        </h4>
+                        <p id="txt-threat-advice" class="text-xs text-slate-400 leading-relaxed bg-slate-900/20 p-3 sm:p-4 border border-slate-900 rounded-xl font-mono min-h-[120px] break-words"></p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-950/80 border border-slate-900 rounded-xl px-4 sm:px-5 py-3 text-[9px] sm:text-[10px] text-slate-500 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 w-full overflow-hidden">
+                    <div class="truncate max-w-full font-mono">SUBMITTED: <span id="txt-meta-input" class="text-slate-400"></span></div>
+                    <div class="flex items-center justify-between sm:justify-end gap-4 font-mono w-full sm:w-auto shrink-0 border-t sm:border-t-0 border-slate-900 pt-2 sm:pt-0">
+                        <div>ENGINE_NODE: <span id="txt-meta-model" class="text-cyan-400 font-bold"></span></div>
+                        <div id="badge-meta-fallback" class="hidden bg-amber-500/10 border border-amber-500/20 text-amber-400 px-1.5 py-0.5 rounded text-[8px] font-bold">FAILOVER</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="lg:col-span-5 space-y-6 w-full min-w-0">
+            
+            <div id="terminal-container-block" class="bg-slate-950/50 border border-slate-900 rounded-2xl p-4 sm:p-5 pt-8 relative flex flex-col justify-between min-h-[240px] sm:min-h-[260px] shadow-2xl backdrop-blur-sm overflow-hidden w-full">
+                
+                <div class="terminal-scan-beam"></div>
+
+                <div class="absolute top-1.3 left-4 sm:left-6 -translate-y-1/2 bg-[#050811] border border-slate-900 rounded-md px-2.5 py-0.5 text-[9px] sm:text-[10px] font-bold tracking-widest text-slate-500 uppercase z-30">
+                    
+                  
+                  Sentinel Core Terminal
+                </div>
+                
+                <div class="flex items-center justify-end gap-4 text-[9px] sm:text-[10px] font-bold text-slate-600 font-mono border-b border-slate-900 pb-2 mb-3 mt-1 z-20 relative">
+    <div>PROCESS: 0x4D11</div>
+    <div>MODE // DEEP_SCAN</div>
+</div>
+                
+                <div id="terminal-stream-node" class="flex-1 text-[11px] font-mono space-y-1.5 text-slate-500 overflow-y-auto max-h-[160px] z-20 relative pr-1 break-words">
+                    <div class="text-cyan-500/60 select-none">&gt; Core matrix standing by. Select an isolated channel and execute analysis...</div>
+                </div>
+            </div>
+
+            <div class="space-y-3 w-full">
+                <h3 class="heading-font text-xs font-bold text-slate-400 uppercase tracking-widest flex items-center gap-2">
+                    <i data-lucide="database" class="w-4 h-4 text-slate-500 shrink-0"></i> Threat Stream Cache Logs
+                </h3>
+                <div id="historical-traffic-grid" class="space-y-3 max-h-[360px] sm:max-h-[420px] overflow-y-auto pr-1 w-full"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="border-t border-slate-900 bg-slate-950/60 px-4 sm:px-6 py-4 flex flex-col md:flex-row items-center justify-between text-[8px] sm:text-[10px] text-slate-600 font-mono tracking-widest gap-3 text-center md:text-left mt-auto">
+        <div>SENTINEL CORE SECURITY FABRIC LAYER SYSTEM // ALL RIGHTS RESERVED</div>
+        <div class="text-cyan-500/40 whitespace-nowrap">TLS MATRIX PIPELINE CONNECTED SECURELY [OK]</div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
