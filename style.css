@@ -1,0 +1,256 @@
+/* Reset & Theme Architecture Configuration Rules */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=JetBrains+Mono:wght@300;400;500;700&display=swap');
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+    background-color: #050811;
+    background-image: 
+        radial-gradient(at 0% 0%, rgba(6, 182, 212, 0.08) 0px, transparent 40%),
+        radial-gradient(at 100% 0%, rgba(99, 102, 241, 0.05) 0px, transparent 40%);
+}
+
+.heading-font {
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Custom Scrollbar Elements */
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+::-webkit-scrollbar-track {
+    background: #060b18;
+}
+::-webkit-scrollbar-thumb {
+    background: #06b6d4;
+    border-radius: 2px;
+}
+
+.glow-cyan { box-shadow: 0 0 20px rgba(6, 182, 212, 0.15); }
+.glow-red { box-shadow: 0 0 25px rgba(239, 68, 68, 0.2); }
+.glow-amber { box-shadow: 0 0 25px rgba(245, 158, 11, 0.2); }
+
+/* Continuous Horizontal Infinite Marquee Tracker */
+.alert-marquee-container {
+    width: 100%;
+    background: rgba(239, 68, 68, 0.04);
+    border-bottom: 1px solid rgba(239, 68, 68, 0.25);
+    padding: 10px 0;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(5, 8, 17, 0.9);
+    z-index: 60;
+}
+
+.marquee-track {
+    display: flex;
+    width: max-content;
+}
+
+.marquee-group {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding-right: 32px;
+    white-space: nowrap;
+    animation: linearMarqueeScroll 28s linear infinite;
+}
+
+/* Typography Weights inside Marquee Stream */
+.status-badge {
+    background: #ef4444;
+    color: #050811;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    box-shadow: 0 0 10px rgba(239, 68, 68, 0.4);
+}
+
+.alert-text {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+}
+
+.divider {
+    color: #334155;
+    font-weight: bold;
+}
+
+.actor-label {
+    color: #64748b;
+    font-size: 11px;
+}
+
+.actor-name {
+    color: #06b6d4;
+    font-weight: 700;
+    text-shadow: 0 0 8px rgba(6, 182, 212, 0.5);
+}
+
+.live-status {
+    color: #ef4444;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 11px;
+    text-shadow: 0 0 8px rgba(239, 68, 68, 0.4);
+}
+
+/* Neon Live Outbreak Pulse Anchor */
+.pulse-indicator {
+    width: 6px;
+    height: 6px;
+    background-color: #ef4444;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 0 8px #ef4444;
+    animation: alertPulseIndicator 1s ease-in-out infinite alternate;
+}
+
+/* Custom form wrapper optimization to fix text clipping seen in UI screenshots */
+.pipeline-form {
+    display: block;
+    width: 100%;
+}
+
+.pipeline-form.hidden {
+    display: none !important;
+}
+
+/* ==========================================
+   ADVANCED CYBERPUNK HUD ANIMATION SUITE
+   ========================================== */
+
+/* 1. Radar Vector Mapping Pipeline Engine Hooks */
+.radar-container {
+    animation: radarContainerGlowRotate 4s ease-in-out infinite alternate;
+}
+
+/* Targets the rotating sweeping arc element circularly on its center point axis */
+.radar-sweeper-pivot {
+    transform-origin: 50px 50px;
+    animation: radarSweeperSpin 3s linear infinite;
+}
+
+/* 2. Active Terminal Digital Scan Beam Layer */
+.terminal-scan-beam {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, transparent, rgba(6, 182, 212, 0.6), #06b6d4, rgba(6, 182, 212, 0.6), transparent);
+    box-shadow: 
+        0 0 12px #06b6d4,
+        0 -2px 8px rgba(6, 182, 212, 0.3),
+        0 -6px 20px rgba(6, 182, 212, 0.15);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 10;
+    animation: terminalLaserScanVertical 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* 3. Active Threat Input Console Panel Laser Sweep */
+.input-scan-beam {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, transparent, rgba(6, 182, 212, 0.7), #06b6d4, rgba(6, 182, 212, 0.7), transparent);
+    box-shadow: 
+        0 0 14px #06b6d4,
+        0 -2px 10px rgba(6, 182, 212, 0.4),
+        0 -6px 18px rgba(6, 182, 212, 0.15);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 40;
+    animation: inputLaserScanVertical 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* 4. Forensics Output Result Card Laser Sweep */
+.result-scan-beam {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, transparent, currentColor, transparent);
+    box-shadow: 0 0 14px currentColor;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 40;
+    animation: resultsLaserScanVertical 2.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* ==========================================
+   ANIMATIONS LAYOUT & KEYFRAMES RULES
+   ========================================== */
+
+@keyframes linearMarqueeScroll {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+}
+
+@keyframes alertPulseIndicator {
+    0% {
+        transform: scale(0.8);
+        opacity: 0.4;
+        box-shadow: 0 0 4px #ef4444;
+    }
+    100% {
+        transform: scale(1.3);
+        opacity: 1;
+        box-shadow: 0 0 12px #ef4444, 0 0 18px #ef4444;
+    }
+}
+
+/* Perfect Circular Radar Sweeper Rotation Matrix Loop */
+@keyframes radarSweeperSpin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Ambient Breathing Hull Glow for Radar Workspace Frame */
+@keyframes radarContainerGlowRotate {
+    0% {
+        box-shadow: 0 0 5px rgba(6, 182, 212, 0.05), inset 0 0 8px rgba(6, 182, 212, 0.05);
+        border-color: rgba(6, 182, 212, 0.15);
+    }
+    100% {
+        box-shadow: 0 0 15px rgba(6, 182, 212, 0.2), inset 0 0 12px rgba(6, 182, 212, 0.1);
+        border-color: rgba(6, 182, 212, 0.4);
+    }
+}
+
+/* Vertical Terminal Sweep Laser Translation */
+@keyframes terminalLaserScanVertical {
+    0% { top: 0%; opacity: 0; }
+    5%, 90% { opacity: 0.85; }
+    100% { top: 100%; opacity: 0; }
+}
+
+/* Vertical Threat Input Panel Sweep Translation */
+@keyframes inputLaserScanVertical {
+    0% { top: 0%; opacity: 0; }
+    5%, 95% { opacity: 1; }
+    100% { top: 100%; opacity: 0; }
+}
+
+/* Vertical Results Frame Summary Sweep Translation */
+@keyframes resultsLaserScanVertical {
+    0% { top: 0%; opacity: 0; }
+    8%, 92% { opacity: 0.75; }
+    100% { top: 100%; opacity: 0; }
+}
+
+/* Pause streaming ticker animation on administrator mouse hover */
+.alert-marquee-container:hover .marquee-group {
+    animation-play-state: paused;
+}
